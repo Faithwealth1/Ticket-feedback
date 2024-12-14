@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Ticket ID: A001</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>TICKET ID – TYPE (Fault Code/OBD Data)</th>
+                    <th>DESCRIPTION (Fault Code Description/Live Data Description With Unit)</th>
+                    <th>STATUS (Basic/Current/Permanent/Unavailable)</th>
+                    <th>ACTION (Chat/View/Edit/Delete)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#TK-121 – Fault Code</td>
+                    <td>Overcharge detected in system – Voltage (V)</td>
+                    <td>Current</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">⋮</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Chat</a></li>
+                                <li><a href="#">View</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#TK-122 – OBD Data</td>
+                    <td>Fuel Level – 75% (Percentage)</td>
+                    <td>Permanent</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">⋮</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Chat</a></li>
+                                <li><a href="#">View</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
